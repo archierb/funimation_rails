@@ -3,34 +3,34 @@
 ## User
 
 - User
-    first_name(String)
-    last_name(String)
-    email(String)
-    admin(False)
+    first_name(String) <br />
+    last_name(String) <br />
+    email(String) <br />
+    admin(False) <br />
 ## Anime
 - Anime
-    name(String)
-    classification(Integer)
-    studio(Belongs_To)
-    seasons(Has_Many)
-    episodes(Has_Many :thorught seasons)
-    genders(Belongs_to)
-    debut_year(Integer)
-    logo(String)
-    header(String)
+    name(String) <br />
+    classification(Integer)<br />
+    studio(Belongs_To)<br />
+    seasons(Has_Many)<br />
+    episodes(Has_Many :thorught seasons)<br />
+    genders(Belongs_to)<br />
+    debut_year(Integer)<br />
+    logo(String)<br />
+    header(String)<br />
 ## Studio
 - Studio
-    name(String)
-    country(String)
-    creation_year(Integer)
+    name(String)<br />
+    country(String)<br />
+    creation_year(Integer)<br />
 ## Seasons
 - Seasons
-    anime(Belongs_to)
-    episodes(Has_many)
-    number(Integer)
+    anime(Belongs_to)<br />
+    episodes(Has_many)<br />
+    number(Integer)<br />
 ## Genders
 - Genders
-    name(String)
+    name(String)<br />
 
 # Gems
 ## Production
