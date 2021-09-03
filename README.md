@@ -2,13 +2,13 @@
 
 ## User
 
-- User
+- User <br />
     first_name(String) <br />
     last_name(String) <br />
     email(String) <br />
     admin(False) <br />
 ## Anime
-- Anime
+- Anime<br />
     name(String) <br />
     classification(Integer)<br />
     studio(Belongs_To)<br />
@@ -19,17 +19,17 @@
     logo(String)<br />
     header(String)<br />
 ## Studio
-- Studio
+- Studio<br />
     name(String)<br />
     country(String)<br />
     creation_year(Integer)<br />
 ## Seasons
-- Seasons
+- Seasons<br />
     anime(Belongs_to)<br />
     episodes(Has_many)<br />
     number(Integer)<br />
 ## Genders
-- Genders
+- Genders<br />
     name(String)<br />
 
 # Gems
@@ -56,11 +56,16 @@
 - Faker
 - Solargraph
 
-
+# Tech-Stack
+## FrontEnd
+- React
+## BackEnd
+- Rails
+## Deploy
+- Heroku(maybe?)
 
 # TODO
 
-- Tech Stack
 - Project
 - CI/CD
 - Docker
