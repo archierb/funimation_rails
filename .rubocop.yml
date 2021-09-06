@@ -4,5 +4,6 @@ inherit_mode:
 AllCops:
   Exclude:
     - bin/**/*
+    - config/**/*
 Documentation:
   Enabled: false
