@@ -1,30 +1,30 @@
+<%= react_component("Header", { name: "Francisco." }) %>
 <div>
-<h2>Log in</h2>
+<div class="mt-20">
+  <p class="text-center text-7xl">Acessar Funimation.</p>
+  <p class="text-center text-5xl">Digite seu e-mail e senha para acessar sua conta.</p>
+</div>
 
-<div class="bg-purple-800">
+<div class="card items-center h-72 mt-20 form-control">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+
+   <div class="input-group">
+     <%= f.label :email, class:"label" %>
+     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input input-bordered" %>
+   </div>
+
+  <div class="input-group">
+    <%= f.label :password, class:"label" %>
+    <%= f.password_field :password, autocomplete: "current-password", class: "input input-bordered" %>
   </div>
 
-  <div class="field">
-    <%= f.label :passwoooord %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
+  <div class="input-group mt-10">
+    <%= f.submit "Log in", class: "btn btn-error" %>
   </div>
 <% end %>
 </div>
-</div>
-
+<div class="card items-center mr-20">
 <%= render "devise/shared/links" %>
+</div>
+</div>
+<%= react_component("Footer", { name: "Francisco." }) %>
