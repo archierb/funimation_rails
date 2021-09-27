@@ -20,5 +20,9 @@ module FunimationRails
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.action_mailer.deliver_later_queue_name = nil
+    config.active_storage.queues.analysis   = nil
+    config.active_storage.queues.purge      = nil
+    config.active_storage.queues.mirror     = nil
   end
 end
