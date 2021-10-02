@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateAnimeJob < ApplicationJob
   queue_as :default
 
