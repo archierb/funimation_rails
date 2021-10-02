@@ -8,7 +8,6 @@ module AnimesServices
 
     def call
       api_response_attributes = Apis::Kitsu::GetAnimeByNameService.call(@anime_name)
-      Rails.logger.info "anime_name = #{api_response_attributes['canonicalTitle']}"
 
       attributes = {
         synopsis: api_response_attributes['synopsis'],

@@ -6,7 +6,7 @@ module ScraperService
     def initialize; end
 
     def call
-      html = URI.open(FUNIMATION_URL)
+      html = URI.parse(FUNIMATION_URL).open
       doc = Nokogiri::HTML(html)
       doc.css('#mainModuleContainer').css('.container').css('.quad-section').css('.slide').css('.img-responsive')
     end
