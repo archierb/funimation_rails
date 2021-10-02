@@ -9,5 +9,15 @@ services:
       - '5432:5432'
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
+
+  redis:
+    image: 'redis:5-alpine'
+    command: redis-server
+    ports:
+      - '6379:6379'
+    volumes:
+      - 'redis:/data'
+
 volumes:
+  redis:
   postgres:
