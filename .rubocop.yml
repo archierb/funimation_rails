@@ -1,3 +1,5 @@
+require: rubocop-rails
+
 inherit_mode:
   merge:
     - Exclude
@@ -5,5 +7,9 @@ AllCops:
   Exclude:
     - bin/**/*
     - config/**/*
+    - spec/**/*
 Documentation:
   Enabled: false
+Lint/MissingSuper:
+  Exclude:
+    - 'app/services/**/*'
